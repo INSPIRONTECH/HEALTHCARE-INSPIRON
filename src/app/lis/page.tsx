@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
+import { useRouter } from 'next/navigation';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
@@ -9,6 +10,7 @@ const supabase = createClient(
 );
 
 export default function LoginForm() {
+  const router = useRouter();
   const [email, setEmail]     = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -31,9 +33,15 @@ export default function LoginForm() {
     }
 
     if (data.session) {
+      // Force hard navigate to ensure React state trees and Auth listeners reset
       window.location.href = '/dashboard';
+    } else if (data.user) {
+      setError('Login matched, but Supabase blocked the session. Is Email Confirm enforced in Auth settings?');
+      setLoading(false);
+    } else {
+      setError('Unknown authentication error.');
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   return (
