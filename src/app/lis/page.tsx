@@ -27,7 +27,8 @@ export default function LoginForm() {
       email,
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        // Send them straight to the dashboard so we don't need a callback route
+        emailRedirectTo: `${window.location.origin}/dashboard`,
       },
     });
 
@@ -58,7 +59,6 @@ export default function LoginForm() {
     }
 
     if (data.session) {
-      // Direct them to the dashboard shell
       window.location.href = '/dashboard';
     }
     setVerifying(false);
