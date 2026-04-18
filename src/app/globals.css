@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ── Neo Sans Pro — CDN (BRAND canonical, all weights) ── */
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Light.woff') format('woff'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-LightItalic.woff') format('woff'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Regular.woff') format('woff'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Medium.woff') format('woff'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Bold.woff') format('woff'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-BoldItalic.woff') format('woff'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Neo Sans Pro'; src: url('https://inspiron.tech/fonts/NeoSansPro-Ultra.woff') format('woff'); font-weight: 900; font-display: swap; }
 
+/* ── Li Ador Noirrit — Bangla script (self-hosted /public/fonts/) ────────── */
+@font-face { font-family: 'Li Ador Noirrit'; src: url('/fonts/Li Ador Noirrit ExtraLight.ttf') format('truetype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Li Ador Noirrit'; src: url('/fonts/Li Ador Noirrit Light.ttf') format('truetype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Li Ador Noirrit'; src: url('/fonts/Li Ador Noirrit Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Li Ador Noirrit'; src: url('/fonts/Li Ador Noirrit SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Li Ador Noirrit'; src: url('/fonts/Li Ador Noirrit Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+
+/* ── Design Tokens ─────────────────────────────────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Healthcare Inspiron palette */
+  --color-hi-teal:         #2DD4BF;
+  --color-hi-teal-deep:    #042F2E;
+  --color-hi-teal-surface: #0A1F1D;
+  --color-hi-teal-print:   #0D9488;
+  --color-hi-amber:        #F59E0B;
+  --color-hi-amber-dark:   #D97706;
+  --color-hi-amber-light:  #FEF3C7;
+  --color-hi-danger:       #EF4444;
+  --color-hi-red:          #F87171;  /* critical / abnormal result highlight */
+  --color-hi-light:        #F0FDFA;
+  --color-hi-text:         #E6EDF3;
+  --color-hi-muted:        #8B949E;
+  --color-hi-border:       #21262D;
+  --color-hi-card:         #0D1117;
+  --color-hi-panel:        #161B22;
+
+  /* Typography */
+  --font-neo: 'Neo Sans Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-bn:  'Li Ador Noirrit', 'Noto Sans Bengali', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ── Base ───────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-neo);
+  background: var(--color-hi-teal-deep);
+  color: var(--color-hi-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Bangla Text Utility ────────────────────────────────────────────────── */
+/* Usage: <span className="bn">বাংলা টেক্সট</span>  */
+.bn {
+  font-family: var(--font-bn);
+  font-weight: 400;
+}
+.bn-semibold {
+  font-family: var(--font-bn);
+  font-weight: 600;
+}
+.bn-bold {
+  font-family: var(--font-bn);
+  font-weight: 700;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-hi-teal-deep); }
+::-webkit-scrollbar-thumb { background: var(--color-hi-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-hi-muted); }
+
+/* ── Print Overrides ────────────────────────────────────────────────────── */
+@media print {
+  .layout-container {
+    background: transparent !important;
+    display: block !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .layout-sidebar {
+    display: none !important;
+  }
+  .layout-main {
+    overflow: visible !important;
+    height: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
