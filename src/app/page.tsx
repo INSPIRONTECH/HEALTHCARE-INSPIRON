@@ -63,7 +63,7 @@ export default function LandingPage() {
           {/* Live badge */}
           <div className="inline-flex items-center gap-2.5 border border-[#39d353]/25 bg-[#39d353]/8 text-[#39d353] text-[9px] font-extrabold px-3.5 py-1.5 rounded-full mb-10 tracking-[0.2em] uppercase backdrop-blur-sm">
             <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
-            Live Now · Barguna, Bangladesh
+            Live Now · Dhaka, Bangladesh
           </div>
 
           {/* Logo */}
@@ -113,10 +113,10 @@ export default function LandingPage() {
           <div className="text-center mb-12">
             <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-teal uppercase mb-3">The Live System</div>
             <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
-              See the real workflow. No mockups.
+              This is the actual system. No mockups.
             </h2>
             <p className="text-hi-muted text-sm max-w-xl mx-auto">
-              This is the actual system running at Sharif X-Ray &amp; Pathology Lab in Barguna — processing real patient samples daily.
+              This is the actual system running on our live demonstration lab (Meghna Diagnostic Centre) — processing real patient samples daily.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function LandingPage() {
             </div>
             <div className="absolute top-4 right-4 text-[9px] font-mono text-[#39d353] uppercase tracking-widest flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
-              Live System · Barguna Lab
+              Live System · Demonstration Lab
             </div>
 
             <div className="relative z-10 flex flex-col items-center gap-5 p-8 text-center">
@@ -491,7 +491,7 @@ export default function LandingPage() {
               {
                 icon: <Activity className="text-[#39d353]" size={22} />,
                 title: "Mindray Analyzer — Live",
-                body: "Mindray BC-20 connected via TCP/IP at Sharif X-Ray & Pathology Lab, Barguna. Processing real patient CBC samples daily since April 2026.",
+                body: "Mindray BC-20 connected via TCP/IP at Meghna Diagnostic Centre (Demonstration System). Processing real patient CBC samples daily.",
                 color: "[#39d353]",
               },
               {
@@ -529,8 +529,8 @@ export default function LandingPage() {
               <span className="w-2 h-2 bg-[#39d353] rounded-full animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-widest text-[#39d353]">Live Since April 2026</span>
             </div>
-            <h3 className="text-xl font-extrabold text-white mb-1">Sharif X-Ray &amp; Pathology Lab</h3>
-            <p className="text-hi-muted text-sm mb-6">Barguna, Barishal Division, Bangladesh</p>
+            <h3 className="text-xl font-extrabold text-white mb-1">Meghna Diagnostic Centre</h3>
+            <p className="text-hi-muted text-sm mb-6">Dhaka, Bangladesh (Live Demonstration System)</p>
             <ul className="space-y-3 text-[12.5px] text-white/80 text-left inline-block">
               {[
                 "Mindray BC-20 connected via TCP/IP bridge",
