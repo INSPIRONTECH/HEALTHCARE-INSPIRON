@@ -116,7 +116,7 @@ export default function LandingPage() {
               This is the actual system. No mockups.
             </h2>
             <p className="text-hi-muted text-sm max-w-xl mx-auto">
-              This is the actual system running on our live demonstration lab (Meghna Diagnostic Centre) — processing real patient samples daily.
+              This is the actual system running on our live demonstration lab (Meghna Diagnostic Centre) — running on our live demonstration system.
             </p>
           </div>
 
@@ -484,7 +484,7 @@ export default function LandingPage() {
               {
                 icon: <Activity className="text-[#39d353]" size={22} />,
                 title: "Mindray Analyzer — Live",
-                body: "Mindray BC-20 connected via TCP/IP at Meghna Diagnostic Centre (Demonstration System). Processing real patient CBC samples daily.",
+                body: "Mindray BC-20 connected via TCP/IP at Meghna Diagnostic Centre (Demonstration System). CBC results arrive automatically from the analyzer. Integration live and certified.",
                 color: "[#39d353]",
               },
               {
@@ -527,7 +527,7 @@ export default function LandingPage() {
             <ul className="space-y-3 text-[12.5px] text-white/80 text-left inline-block">
               {[
                 "Mindray BC-20 connected via TCP/IP bridge",
-                "Processing live patient CBC, biochemistry, and serology daily",
+                "CBC results automated via TCP/IP bridge. Biochemistry, serology, and other categories — manual entry.",
                 "A4 bilingual clinical reports with QR verification in production",
                 "Doctor portal active — referring physicians viewing results",
               ].map((item, i) => (
