@@ -4,6 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "HEALTHCARE INSPIRON — Bangladesh's Connected Laboratory Information System",
   description: "The only Laboratory Information System built to connect your lab to Bangladesh's national health record. Live now. Mindray analyzer integration, bilingual reports, DGHS SHR ready. Book a free demo.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({
