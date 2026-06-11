@@ -106,7 +106,7 @@ export default function LandingPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════ */}
-      {/* SECTION 2 — PROOF (demo video placeholder)                        */}
+      {/* SECTION 2 — PROOF (demo video)                                    */}
       {/* ══════════════════════════════════════════════════════════════════ */}
       <section id="proof" className="px-6 py-24 border-b border-white/5 bg-[#0a0d14]">
         <div className="max-w-4xl mx-auto">
@@ -120,40 +120,32 @@ export default function LandingPage() {
             </p>
           </div>
 
-          {/* Video placeholder — will be replaced with the screen recording */}
-          <div className="relative bg-[#0D1117] border border-hi-border rounded-2xl overflow-hidden shadow-2xl aspect-video flex flex-col items-center justify-center group hover:border-hi-teal/30 transition-all duration-500">
-            <div className="absolute inset-0 bg-gradient-to-br from-hi-teal/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            {/* Terminal dots */}
-            <div className="absolute top-4 left-4 flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-hi-danger" />
-              <div className="w-3 h-3 rounded-full bg-hi-amber" />
-              <div className="w-3 h-3 rounded-full bg-hi-teal" />
-            </div>
-            <div className="absolute top-4 right-4 text-[9px] font-mono text-[#39d353] uppercase tracking-widest flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
-              Live System · Demonstration Lab
+          {/* Demo Video — actual system recording */}
+          <div className="relative bg-[#0D1117] border border-hi-border rounded-2xl overflow-hidden shadow-2xl aspect-video group hover:border-hi-teal/30 transition-all duration-500">
+            {/* Terminal chrome header */}
+            <div className="absolute top-0 left-0 right-0 h-9 bg-[#070b12] border-b border-white/5 flex items-center justify-between px-4 z-20 pointer-events-none">
+              <div className="flex gap-1.5">
+                <div className="w-2.5 h-2.5 rounded-full bg-hi-danger" />
+                <div className="w-2.5 h-2.5 rounded-full bg-hi-amber" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#39d353]" />
+              </div>
+              <div className="text-[9px] font-mono text-[#39d353] uppercase tracking-widest flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
+                Live System · Demonstration Lab
+              </div>
+              <div className="w-14" />
             </div>
 
-            <div className="relative z-10 flex flex-col items-center gap-5 p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-hi-teal/10 border border-hi-teal/30 flex items-center justify-center">
-                <PlayCircle className="text-hi-teal" size={32} />
-              </div>
-              <div>
-                <div className="text-white font-extrabold mb-2">Demo video coming shortly</div>
-                <div className="text-hi-muted text-[13px] max-w-sm">
-                  30–60s screen recording: sample number → CBC auto-lands → bilingual report → print.
-                  <br />A working system on video — none of the "contact us" competitors can show this.
-                </div>
-              </div>
-              <Link
-                href={WABA_URL}
-                target="_blank"
-                className="flex items-center gap-2 bg-hi-teal/10 border border-hi-teal/30 hover:border-hi-teal text-hi-teal px-5 py-2.5 rounded-sm text-[11px] font-bold uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(45,212,191,0.2)]"
-              >
-                <MessageCircle size={14} />
-                Get a guided live demo instead
-              </Link>
-            </div>
+            {/* HTML5 video player */}
+            <video
+              src="/demo.mp4"
+              className="w-full h-full object-cover pt-9"
+              controls
+              playsInline
+              autoPlay
+              muted
+              loop
+            />
           </div>
 
           <p className="text-center text-hi-muted/60 text-[11px] mt-5">
@@ -161,6 +153,7 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
+
 
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 3 — CONNECTED WORKFLOW (flow, not feature dump)           */}
