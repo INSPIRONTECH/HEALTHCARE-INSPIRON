@@ -179,7 +179,7 @@ export default function LandingPage() {
               {
                 step: "01",
                 title: "Register",
-                desc: "Patient arrives. Enter sample number. NID auto-fills bilingual name + DOB in 824ms.",
+                desc: "Patient arrives. Reception fills name, age, and phone on one screen. A unique Sample ID is auto-generated — no manual entry.",
                 color: "hi-teal",
                 icon: <Cpu size={20} className="text-hi-teal" />,
                 live: true,
@@ -195,7 +195,7 @@ export default function LandingPage() {
               {
                 step: "03",
                 title: "Verify",
-                desc: "Lab technician reviews the result. Flags critical values. Signs electronically with their credentials.",
+                desc: "Lab technician reviews the results on screen. One click to verify — the system marks it done and opens the bilingual report instantly.",
                 color: "hi-amber",
                 icon: <BadgeCheck size={20} className="text-hi-amber" />,
                 live: true,
@@ -211,7 +211,7 @@ export default function LandingPage() {
               {
                 step: "05",
                 title: "Submit to DGHS SHR",
-                desc: "FHIR R4 DiagnosticReport submitted to Bangladesh's national Shared Health Record. First private LIS building toward this.",
+                desc: "Being engineered to submit FHIR R4 records to Bangladesh's national Shared Health Record. This is the direction — in development, not live yet.",
                 color: "[#39d353]",
                 icon: <Database size={20} className="text-[#39d353]" />,
                 live: false,
