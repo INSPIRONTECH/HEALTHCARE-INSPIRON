@@ -7,7 +7,7 @@ import {
 import { HealthcareLogo, HealthcareWatermark } from "@/components/HealthcareLogo";
 
 // ── WhatsApp WABA — public CTA number (Opus directive: WABA only, not personal)
-const WABA_NUMBER = "8801601618030";
+const WABA_NUMBER = "8801719300849";
 const WABA_URL = `https://wa.me/${WABA_NUMBER}`;
 
 export default function LandingPage() {
@@ -544,7 +544,7 @@ export default function LandingPage() {
             <div className="text-[10px] uppercase tracking-widest text-hi-muted/60 mb-3">Real contact. Real people.</div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-[12px] text-hi-muted">
               <span>📧 <Link href="mailto:hello@inspiron.tech" className="hover:text-white transition-colors">hello@inspiron.tech</Link></span>
-              <span>💬 <Link href={WABA_URL} target="_blank" className="hover:text-white transition-colors">WhatsApp: 01601-618030</Link></span>
+              <span>💬 <Link href={WABA_URL} target="_blank" className="hover:text-white transition-colors">WhatsApp: 01719-300849</Link></span>
               <span>🌐 <Link href="https://inspiron.tech" target="_blank" className="hover:text-white transition-colors">inspiron.tech</Link></span>
             </div>
           </div>
