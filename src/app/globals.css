@@ -27,7 +27,7 @@
   --color-hi-amber:        #F59E0B;
   --color-hi-amber-dark:   #D97706;
   --color-hi-amber-light:  #FEF3C7;
-  --color-hi-danger:       #EF4444;
+
   --color-hi-red:          #F87171;  /* critical / abnormal result highlight */
   --color-hi-light:        #F0FDFA;
   --color-hi-text:         #E6EDF3;
@@ -37,7 +37,7 @@
   --color-hi-panel:        #161B22;
 
   /* Typography */
-  --font-neo: 'Neo Sans Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-neo: 'Neo Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-bn:  'Li Ador Noirrit', 'Noto Sans Bengali', sans-serif;
 }
 

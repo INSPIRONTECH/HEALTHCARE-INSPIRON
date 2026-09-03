@@ -12,10 +12,10 @@ const WABA_URL = `https://wa.me/${WABA_NUMBER}`;
 
 export default function LandingPage() {
   return (
-    <main className="w-full flex flex-col min-h-screen bg-[#010409] font-neo text-hi-text overflow-x-hidden selection:bg-hi-teal/30">
+    <main className="w-full flex flex-col min-h-screen bg-hi-teal-deep font-neo text-hi-text overflow-x-hidden selection:bg-hi-teal/30">
 
       {/* ── NAVBAR ── */}
-      <nav className="sticky top-0 z-50 flex items-center justify-between px-5 py-3.5 bg-[#010409]/95 backdrop-blur-xl border-b border-white/5">
+      <nav className="sticky top-0 z-50 flex items-center justify-between px-5 py-3.5 bg-hi-teal-deep/95 backdrop-blur-xl border-b border-white/5">
         <HealthcareLogo variant="horizontal" size={36} />
 
         <div className="hidden md:flex items-center gap-8 text-[10.5px] font-bold tracking-[0.14em] uppercase text-hi-muted">
@@ -61,8 +61,8 @@ export default function LandingPage() {
 
         <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto w-full">
           {/* Live badge */}
-          <div className="inline-flex items-center gap-2.5 border border-[#39d353]/25 bg-[#39d353]/8 text-[#39d353] text-[9px] font-extrabold px-3.5 py-1.5 rounded-full mb-10 tracking-[0.2em] uppercase backdrop-blur-sm">
-            <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2.5 border border-hi-teal/25 bg-hi-teal/8 text-hi-teal text-[9px] font-extrabold px-3.5 py-1.5 rounded-full mb-10 tracking-[0.2em] uppercase backdrop-blur-sm">
+            <span className="w-1.5 h-1.5 bg-hi-teal rounded-full animate-pulse" />
             Live Now · Dhaka, Bangladesh
           </div>
 
@@ -74,7 +74,7 @@ export default function LandingPage() {
           {/* Headline — Opus's exact positioning */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5 max-w-3xl">
             The only Laboratory Information System built to connect your lab to{" "}
-            <span className="text-[#39d353]">Bangladesh's national health record.</span>
+            <span className="text-hi-teal">Bangladesh's national health record.</span>
           </h1>
           <p className="text-[15px] sm:text-[17px] text-hi-muted max-w-2xl mx-auto mb-12 leading-relaxed">
             Live now. Built for Bangladesh's diagnostic labs — from a single-room upazila clinic to a multi-partner diagnostic centre.
@@ -84,7 +84,7 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link
               href="#proof"
-              className="group flex items-center gap-3 bg-hi-teal text-[#010409] px-7 py-3.5 rounded-sm text-[12px] font-extrabold uppercase tracking-[0.14em] transition-all duration-300 hover:bg-hi-teal/90 hover:shadow-[0_0_30px_rgba(45,212,191,0.4)]"
+              className="group flex items-center gap-3 bg-hi-teal text-hi-teal-deep px-7 py-3.5 rounded-sm text-[12px] font-extrabold uppercase tracking-[0.14em] transition-all duration-300 hover:bg-hi-teal/90 hover:shadow-[0_0_30px_rgba(45,212,191,0.4)]"
             >
               <PlayCircle size={16} />
               Watch It Work
@@ -108,7 +108,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 2 — PROOF (demo video)                                    */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section id="proof" className="px-6 py-24 border-b border-white/5 bg-[#0a0d14]">
+      <section id="proof" className="px-6 py-24 border-b border-white/5 bg-hi-teal-surface">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-teal uppercase mb-3">The Live System</div>
@@ -127,10 +127,10 @@ export default function LandingPage() {
               <div className="flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-hi-danger" />
                 <div className="w-2.5 h-2.5 rounded-full bg-hi-amber" />
-                <div className="w-2.5 h-2.5 rounded-full bg-[#39d353]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-hi-teal" />
               </div>
-              <div className="text-[9px] font-mono text-[#39d353] uppercase tracking-widest flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-[#39d353] rounded-full animate-pulse" />
+              <div className="text-[9px] font-mono text-hi-teal uppercase tracking-widest flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-hi-teal rounded-full animate-pulse" />
                 Live System · Demonstration Lab
               </div>
               <div className="w-14" />
@@ -158,7 +158,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 3 — CONNECTED WORKFLOW (flow, not feature dump)           */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section id="how-it-works" className="px-6 py-28 border-b border-white/5 bg-[#010409]">
+      <section id="how-it-works" className="px-6 py-28 border-b border-white/5 bg-hi-teal-deep">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-amber uppercase mb-3">The Connected Workflow</div>
@@ -212,8 +212,8 @@ export default function LandingPage() {
                 step: "05",
                 title: "Submit to DGHS SHR",
                 desc: "Being engineered to submit FHIR R4 records to Bangladesh's national Shared Health Record. This is the direction — in development, not live yet.",
-                color: "[#39d353]",
-                icon: <Database size={20} className="text-[#39d353]" />,
+                color: "hi-teal",
+                icon: <Database size={20} className="text-hi-teal" />,
                 live: false,
                 badge: "In Development",
               },
@@ -223,7 +223,7 @@ export default function LandingPage() {
                 <div className={`w-16 h-16 rounded-2xl bg-${s.color}/10 border border-${s.color}/25 flex flex-col items-center justify-center mb-4 shadow-[0_0_20px_rgba(45,212,191,0.05)] relative`}>
                   {s.icon}
                   {!s.live && (
-                    <div className="absolute -top-2 -right-2 bg-[#a371f7] text-[7px] font-black uppercase tracking-widest px-1.5 py-0.5 rounded-full text-white">
+                    <div className="absolute -top-2 -right-2 bg-hi-amber text-[7px] font-black uppercase tracking-widest px-1.5 py-0.5 rounded-full text-white">
                       Soon
                     </div>
                   )}
@@ -246,7 +246,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 4 — WHY DIFFERENT (4 real moats)                         */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section id="why-different" className="px-6 py-28 border-b border-white/5 bg-[#0a0d14]">
+      <section id="why-different" className="px-6 py-28 border-b border-white/5 bg-hi-teal-surface">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-teal uppercase mb-3">The Real Moats</div>
@@ -275,16 +275,16 @@ export default function LandingPage() {
                 live: true,
               },
               {
-                icon: <Database className="text-[#39d353]" size={28} />,
-                color: "[#39d353]",
+                icon: <Database className="text-hi-teal" size={28} />,
+                color: "hi-teal",
                 label: "Built to Submit to DGHS SHR",
-                body: "9,500 private labs in Bangladesh currently contribute zero records to the national Shared Health Record. Healthcare Inspiron is being engineered to submit FHIR R4 DiagnosticReports directly to the DGHS SHR — as far as we know, the first private LIS building toward this.",
+                body: "9,500 private labs in Bangladesh currently contribute zero records to the national Shared Health Record. HEALTHCARE INSPIRON is being engineered to submit FHIR R4 DiagnosticReports directly to the DGHS SHR — as far as we know, the first private LIS building toward this.",
                 live: false,
                 badge: "In Development",
               },
               {
-                icon: <ShieldCheck className="text-[#a371f7]" size={28} />,
-                color: "[#a371f7]",
+                icon: <ShieldCheck className="text-hi-amber" size={28} />,
+                color: "hi-amber",
                 label: "Claude AI Safety Layer",
                 body: "A critical-result flagging system powered by Claude AI — when lab values fall outside clinical reference ranges, the system flags it for a doctor to review and sign. A human always makes the final call. The AI catches what humans can miss under pressure.",
                 live: false,
@@ -299,12 +299,12 @@ export default function LandingPage() {
                       {m.icon}
                     </div>
                     {m.live ? (
-                      <div className="flex items-center gap-1.5 text-[8.5px] font-black uppercase tracking-widest text-[#39d353] bg-[#39d353]/8 border border-[#39d353]/20 px-2.5 py-1 rounded-full">
-                        <span className="w-1 h-1 bg-[#39d353] rounded-full animate-pulse" />
+                      <div className="flex items-center gap-1.5 text-[8.5px] font-black uppercase tracking-widest text-hi-teal bg-hi-teal/8 border border-hi-teal/20 px-2.5 py-1 rounded-full">
+                        <span className="w-1 h-1 bg-hi-teal rounded-full animate-pulse" />
                         Live
                       </div>
                     ) : (
-                      <div className="text-[8.5px] font-black uppercase tracking-widest text-[#a371f7] bg-[#a371f7]/10 border border-[#a371f7]/20 px-2.5 py-1 rounded-full">
+                      <div className="text-[8.5px] font-black uppercase tracking-widest text-hi-amber bg-hi-amber/10 border border-hi-amber/20 px-2.5 py-1 rounded-full">
                         {m.badge}
                       </div>
                     )}
@@ -321,14 +321,14 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 5 — WHO IT'S FOR                                         */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section className="px-6 py-24 border-b border-white/5 bg-[#010409]">
+      <section className="px-6 py-24 border-b border-white/5 bg-hi-teal-deep">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-muted uppercase mb-3">Who It&apos;s For</div>
           <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-6">
             Built for every lab in Bangladesh.
           </h2>
           <p className="text-hi-muted text-sm max-w-2xl mx-auto mb-14 leading-relaxed">
-            Whether you process 20 samples a day or 2,000 — Healthcare Inspiron scales with your operation.
+            Whether you process 20 samples a day or 2,000 — HEALTHCARE INSPIRON scales with your operation.
             Same system. Same data quality. Same compliance posture.
           </p>
 
@@ -351,12 +351,12 @@ export default function LandingPage() {
                 title: "Multi-Partner Chain",
                 subtitle: "Enterprise · Network",
                 desc: "Multi-branch sub-tenant dashboard, white-label theming, custom SLA, custom analyzer TCP/LIMS bridges. Purpose-built for diagnostic networks expanding nationally.",
-                color: "[#a371f7]",
+                color: "hi-amber",
               },
             ].map((t, i) => (
               <div key={i} className={`relative rounded-2xl p-7 border transition-all duration-300 hover:-translate-y-1.5 ${t.featured ? `bg-gradient-to-b from-hi-amber/10 to-hi-panel border-hi-amber/30 shadow-[0_0_40px_rgba(245,158,11,0.08)]` : 'bg-hi-panel border-hi-border'}`}>
                 {t.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[8.5px] font-black uppercase tracking-widest bg-hi-amber text-[#010409] px-3 py-1 rounded-full">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[8.5px] font-black uppercase tracking-widest bg-hi-amber text-hi-teal-deep px-3 py-1 rounded-full">
                     Most Common
                   </div>
                 )}
@@ -372,7 +372,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 6 — PRICING (published — transparency wedge)             */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section id="pricing" className="px-6 py-28 bg-[#0a0d14] border-b border-white/5 relative overflow-hidden">
+      <section id="pricing" className="px-6 py-28 bg-hi-teal-surface border-b border-white/5 relative overflow-hidden">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[40%] bg-gradient-to-t from-hi-teal/4 to-transparent pointer-events-none" />
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-5">
@@ -411,7 +411,7 @@ export default function LandingPage() {
                 subtitle: "Growing Centre",
                 price: "৳6,000",
                 subprice: "/month",
-                color: "[#a371f7]",
+                color: "hi-amber",
                 features: ["Everything in Standard", "Multiple staff accounts", "Critical result alerting", "Priority support", "FHIR SHR submission (when live)"],
                 cta: "Book Demo",
               },
@@ -420,14 +420,14 @@ export default function LandingPage() {
                 subtitle: "Enterprise",
                 price: "By Quote",
                 subprice: "Custom SLA",
-                color: "[#39d353]",
+                color: "hi-teal",
                 features: ["Multi-branch sub-tenancy", "White-label theming", "Custom analyzer bridges", "Dedicated operations support", "Custom integrations"],
                 cta: "Contact Us",
               },
             ].map((p, i) => (
               <div key={i} className={`relative flex flex-col rounded-2xl p-7 border transition-all duration-300 hover:-translate-y-1.5 ${p.featured ? `bg-gradient-to-b from-hi-amber/10 to-hi-panel border-hi-amber/30 shadow-[0_0_40px_rgba(245,158,11,0.08)]` : 'bg-hi-panel border-hi-border'}`}>
                 {p.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[8px] font-black uppercase tracking-widest bg-hi-amber text-[#010409] px-3 py-1 rounded-full whitespace-nowrap">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[8px] font-black uppercase tracking-widest bg-hi-amber text-hi-teal-deep px-3 py-1 rounded-full whitespace-nowrap">
                     Most Popular
                   </div>
                 )}
@@ -448,7 +448,7 @@ export default function LandingPage() {
                 <Link
                   href={WABA_URL}
                   target="_blank"
-                  className={`w-full text-center py-2.5 rounded-sm text-[10.5px] font-bold uppercase tracking-widest transition-all ${p.featured ? 'bg-hi-amber text-[#010409] hover:bg-hi-amber/90' : `border border-${p.color}/30 text-${p.color} hover:border-${p.color} hover:bg-${p.color}/10`}`}
+                  className={`w-full text-center py-2.5 rounded-sm text-[10.5px] font-bold uppercase tracking-widest transition-all ${p.featured ? 'bg-hi-amber text-hi-teal-deep hover:bg-hi-amber/90' : `border border-${p.color}/30 text-${p.color} hover:border-${p.color} hover:bg-${p.color}/10`}`}
                 >
                   {p.cta}
                 </Link>
@@ -465,10 +465,10 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 7 — TRUST STRIP (honest — no fake logos or counts)       */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section className="px-6 py-24 border-b border-white/5 bg-[#010409]">
+      <section className="px-6 py-24 border-b border-white/5 bg-hi-teal-deep">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <div className="text-[9.5px] font-black tracking-[0.25em] text-[#39d353] uppercase mb-3">Where We Are</div>
+            <div className="text-[9.5px] font-black tracking-[0.25em] text-hi-teal uppercase mb-3">Where We Are</div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Live. Working. Looking for our first labs to build alongside.
             </h2>
@@ -482,10 +482,10 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {[
               {
-                icon: <Activity className="text-[#39d353]" size={22} />,
+                icon: <Activity className="text-hi-teal" size={22} />,
                 title: "Mindray Analyzer — Live",
                 body: "Mindray BC-20 connected via TCP/IP at Meghna Diagnostic Centre (Demonstration System). CBC results arrive automatically from the analyzer. Integration live and certified.",
-                color: "[#39d353]",
+                color: "hi-teal",
               },
               {
                 icon: <Database className="text-hi-teal" size={22} />,
@@ -494,10 +494,10 @@ export default function LandingPage() {
                 color: "hi-teal",
               },
               {
-                icon: <ShieldCheck className="text-[#a371f7]" size={22} />,
+                icon: <ShieldCheck className="text-hi-amber" size={22} />,
                 title: "Powered by Claude AI",
                 body: "Claude AI integrated as a safety layer — critical-result flagging in development. A human always reviews and signs. The AI supports, not replaces, clinical judgment.",
-                color: "[#a371f7]",
+                color: "hi-amber",
               },
               {
                 icon: <Lock className="text-hi-amber" size={22} />,
@@ -517,10 +517,10 @@ export default function LandingPage() {
           </div>
 
           {/* Pilot card */}
-          <div className="bg-[#0D1117] border border-[#39d353]/20 rounded-2xl p-8 md:p-10 max-w-xl mx-auto text-center shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+          <div className="bg-[#0D1117] border border-hi-teal/20 rounded-2xl p-8 md:p-10 max-w-xl mx-auto text-center shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
             <div className="flex items-center justify-center gap-2.5 mb-5">
-              <span className="w-2 h-2 bg-[#39d353] rounded-full animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-widest text-[#39d353]">Live Since April 2026</span>
+              <span className="w-2 h-2 bg-hi-teal rounded-full animate-pulse" />
+              <span className="text-[10px] font-black uppercase tracking-widest text-hi-teal">Live Since April 2026</span>
             </div>
             <h3 className="text-xl font-extrabold text-white mb-1">Meghna Diagnostic Centre</h3>
             <p className="text-hi-muted text-sm mb-6">Dhaka, Bangladesh (Live Demonstration System)</p>
@@ -532,7 +532,7 @@ export default function LandingPage() {
                 "Doctor portal active — referring physicians viewing results",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
-                  <CheckCircle2 size={14} className="text-[#39d353] shrink-0" />
+                  <CheckCircle2 size={14} className="text-hi-teal shrink-0" />
                   {item}
                 </li>
               ))}
@@ -554,7 +554,7 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════════════════════════ */}
       {/* SECTION 8 — FOOTER CTA                                           */}
       {/* ══════════════════════════════════════════════════════════════════ */}
-      <section className="px-6 py-28 bg-[#0a0d14] text-center relative overflow-hidden">
+      <section className="px-6 py-28 bg-hi-teal-surface text-center relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-gradient-to-b from-hi-teal/8 to-transparent blur-[100px] pointer-events-none rounded-full" />
         <div className="relative z-10 max-w-2xl mx-auto">
           <div className="flex justify-center mb-8">
@@ -570,7 +570,7 @@ export default function LandingPage() {
           <Link
             href={WABA_URL}
             target="_blank"
-            className="group inline-flex items-center gap-3 bg-hi-teal text-[#010409] px-10 py-4 rounded-sm text-[13px] font-extrabold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-hi-teal/90 hover:shadow-[0_0_40px_rgba(45,212,191,0.4)]"
+            className="group inline-flex items-center gap-3 bg-hi-teal text-hi-teal-deep px-10 py-4 rounded-sm text-[13px] font-extrabold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-hi-teal/90 hover:shadow-[0_0_40px_rgba(45,212,191,0.4)]"
           >
             <MessageCircle size={18} />
             Book a Free Live Demo
@@ -583,7 +583,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="px-6 pt-10 pb-8 text-center bg-[#010409] border-t border-white/5">
+      <footer className="px-6 pt-10 pb-8 text-center bg-hi-teal-deep border-t border-white/5">
         <div className="text-[9.5px] font-bold uppercase tracking-[0.2em] text-hi-amber/50 mb-4">"Your lab. Your doctors. Your data."</div>
         <div className="text-[9px] uppercase tracking-widest text-white/25">
           DESIGNED &amp; ENGINEERED BY <strong className="text-white/40">INSPIRON TECH</strong> · BANGLADESH
